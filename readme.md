@@ -1,5 +1,8 @@
 # Slime Mold Simulation
 
+Thanks to Sebastian Lague for the awesome idea:
+[Sebastian Lague YouTube](https://www.youtube.com/watch?v=X-iSQQgOd1A)
+
 ![Blue Gradient](./assets/blue.png)
 
 This Go project simulates the movement of slime molds on a 2D grid. The slime mold's behavior is influenced by various parameters such as speed, trail dynamics, and random forces. The project also supports customization of the color gradient used to visualize the trails left behind by the slimes.
