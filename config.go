@@ -109,13 +109,13 @@ var config = Config{
 	slimeSpeedRandomness:       0.5,
 	worldDecrementSpeed:        0.05,
 	trailSampleDirectionOffset: 0.9,
-	trailSampleDirectionLength: 20,
-	trailTurnForce:             1.2,
-	trailRandomTurnForce:       0.15,
+	trailSampleDirectionLength: 40,
+	trailTurnForce:             0.1,
+	trailRandomTurnForce:       0.3,
 	trailSampleSize:            1,
-	startCircleSize:            5.0,
-	startTowardsCenter:         true,
-	gradient:                   darkBlueGradient,
+	startCircleSize:            50.0,
+	startTowardsCenter:         false,
+	gradient:                   blueYellowGradient,
 }
 
 /*

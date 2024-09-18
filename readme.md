@@ -1,5 +1,7 @@
 # Slime Mold Simulation
 
+![Blue Gradient](./assets/blue.png)
+
 This Go project simulates the movement of slime molds on a 2D grid. The slime mold's behavior is influenced by various parameters such as speed, trail dynamics, and random forces. The project also supports customization of the color gradient used to visualize the trails left behind by the slimes.
 
 ## Configuration
@@ -58,7 +60,7 @@ var darkBlueGradient = Gradient{
 1. Install Go from [the official Go website](https://golang.org/dl/).
 2. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/slime-mold-simulation.git
+   git clone https://github.com/Hawaii66/slime-mold-simulation.git
    ```
 3. Navigate to the project directory:
    ```bash
@@ -86,3 +88,29 @@ This simulation supports running up to **1,000,000 slime agents** concurrently. 
 - **Concurrent Slime Processing**: Slime agents are processed in parallel using goroutines. Since slime agents only require read access to the world map (e.g., for trail detection), the simulation can handle many agents simultaneously without conflicts, leveraging Go’s concurrency model to maximize performance.
 
 These optimizations make the simulation highly scalable and efficient, even with a large number of agents.
+
+## Visual Examples
+
+Below are some visual examples of the slime mold simulation using different gradient configurations:
+
+- **Blue Gradient**:  
+  A smooth transition from dark to light blue, giving a calm and cool aesthetic.
+
+  ![Blue Gradient](./assets/blue.png)
+
+- **Sunset**:  
+   A warm, dynamic gradient inspired by sunset colors, blending oranges, purples, and reds.
+
+  ![Sunset](./assets/sunset.png)
+
+- **Red sky**:  
+  A vibrant red gradient that highlights the trails with a striking contrast.
+
+  ![Red Sky](./assets/redsky.png)
+
+- **Blue Yellow**:  
+  A harsh contrast between yellow and blue.
+
+  ![Blue Yellow](./assets/blueyellow.png)
+
+These images showcase the versatility of the slime trail visualization by adjusting the gradient in the configuration. You can easily experiment with your own gradients to create different visual effects.
