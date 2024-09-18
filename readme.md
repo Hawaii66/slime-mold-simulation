@@ -92,7 +92,7 @@ var darkBlueGradient = Gradient{
    ```
 5. Run the simulation:
    ```bash
-   go run main.go
+   go run .
    ```
 
 ## Features
