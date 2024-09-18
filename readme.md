@@ -36,6 +36,23 @@ var config = Config{
 }
 ```
 
+| **Parameter**                | **Description**                                                   | **Recommended Range** | **Default** |
+| ---------------------------- | ----------------------------------------------------------------- | --------------------- | ----------- |
+| `sizeX`                      | Width of the simulation grid                                      | 500 - 2000            | 720         |
+| `sizeY`                      | Height of the simulation grid                                     | 500 - 2000            | 720         |
+| `numOfSlimes`                | Number of slime agents in the simulation                          | 100,000 - 1,000,000   | 1,000,000   |
+| `slimeDefaultSpeed`          | Base speed of each slime                                          | 0.0 - 5.0             | 2.0         |
+| `slimeSpeedRandomness`       | Random variation in slime speed                                   | 0.0 - 5.0             | 0.5         |
+| `worldDecrementSpeed`        | Rate at which the world trails fade                               | 0.001 - 0.5           | 0.05        |
+| `trailSampleDirectionOffset` | Offset for sampling trail direction                               | 0.3 - 1.5             | 0.9         |
+| `trailSampleDirectionLength` | Distance for sampling trails                                      | 5 - 50                | 20          |
+| `trailTurnForce`             | Force applied when turning along a trail                          | 0.0 - 2.0             | 1.2         |
+| `trailRandomTurnForce`       | Random turn force applied to each slime                           | 0.0 - 2.0             | 0.15        |
+| `trailSampleSize`            | Size of trail sample areas                                        | 1 - 2                 | 1           |
+| `startCircleSize`            | Radius of the initial spawn circle for slimes                     | 1.0 - 50.0            | 5.0         |
+| `startTowardsCenter`         | Whether the slimes initially move towards the center (true/false) | true/false            | true        |
+| `gradient`                   | Color gradient for trail visualization                            | Customizable          | Dark Blue   |
+
 ### Customizing the Gradient
 
 The `gradient` parameter allows you to change the color gradient used to visualize the trails left by the slime molds. You can modify the `colors` slice in the `Gradient` struct to define different stops along the gradient.
@@ -113,4 +130,4 @@ Below are some visual examples of the slime mold simulation using different grad
 
   ![Blue Yellow](./assets/blueyellow.png)
 
-These images showcase the versatility of the slime trail visualization by adjusting the gradient in the configuration. You can easily experiment with your own gradients to create different visual effects.
+These images showcase the versatility of the slime trail visualization by adjusting the gradient and configuration values in the configuration. You can easily experiment with your own gradients to create different visual effects.
